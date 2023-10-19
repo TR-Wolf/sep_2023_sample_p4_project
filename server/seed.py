@@ -7,11 +7,13 @@ from random import randint, choice as rc
 from faker import Faker
 
 # Local imports
-from app import app
-from models import db
+from config import app, db
+from models import User
 
 if __name__ == '__main__':
     fake = Faker()
     with app.app_context():
         print("Starting seed...")
+
+        import ipdb; ipdb.set_trace()
         # Seed code goes here!
